@@ -4,11 +4,11 @@
   <head>
     <meta charset='utf-8' />
     <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Talend Spatial : ETL GIS GEOSPATIAL" />
+    <meta name="description" content="Spatial extension for Talend : GEOSPATIAL ETL " />
 
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
 
-    <title>Talend Spatial</title>
+    <title>Spatial extension for Talend</title>
   </head>
 
   <body>
@@ -18,8 +18,8 @@
         <header class="inner">
           <a id="forkme_banner" href="https://github.com/talend-spatial">View on GitHub</a>
 
-          <h1 id="project_title">Talend Spatial</h1>
-          <h2 id="project_tagline">ETL GIS GEOSPATIAL</h2>
+          <h1 id="project_title">Spatial extension for Talend</h1>
+          <h2 id="project_tagline">GEOSPATIAL ETL </h2>
 
         </header>
     </div>
@@ -27,19 +27,95 @@
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
-        <h3>Spatial module for Talend Open Studio</h3>
+        <ul>
+<li><a href="http://sourceforge.net/projects/sdispatialetl/files/sdispatialetl/">Download</a></li>
+<li><a href="http://www.talendforge.org/forum/viewforum.php?id=9">Contact &amp; discussion</a></li>
+</ul><h1>What it does?</h1>
 
-<p>Spatial module for Talend Open Studio (aka. Spatial Data Integrator or SDI) is an ETL with geospatial capabilities.</p>
+<h2>Transform and Integrate Data Between Geographic Information Systems</h2>
 
-<p>Likewise regular TOS components, there are basically three sorts of Geo components: input, output and transform components. Input and output components read features from and write feature to datastores, respectively. Transform components read features from their input flows, possibly transform those features, and write features to their output flows. The term transform is to be taken loosely here as it represents any sort of operation.</p>
+<p>Spatial extension for Talend is a powerful ETL based on <a href="http://www.talend.com/products/data-integration">Talend Integration Suite</a> extending its capabilities toward <strong>geospatial information</strong>.</p>
 
-<p>Spatial components are using GeoTools and Java Topology Suite for read/write GIS formats and feature manipulation. Experimental works have been done to embed uDig to display GIS datasets and Sextante library to add RASTER processing.</p>
+<blockquote>
+<p>Talend’s data integration products provide an extensible, highly-scalable, open source set of tools to access, transform and integrate data from any business system in real time or batch to meet both operational and analytical data integration needs. With 450+ connector components, it connects to almost any data source. The broad range of use cases addressed by Talend include: ETL for business intelligence, MDM and data warehousing; data synchronization; data migration and consolidation; data sharing and data services.</p>
+</blockquote>
 
-<h3>News &amp; events</h3>
+<h1>How it works?</h1>
 
-<h3>Use cases</h3>
+<h2>Bridging robust Open Source geospatial librairies for efficient data management</h2>
 
-<h3>Authors and Contributors</h3>
+<p>The spatial extension use <a href="http://geotools.org/">GeoTools</a>, <a href="http://gdal.org/">GDAL/OGR</a>, <a href="http://www.vividsolutions.com/jts/jtshome.htm">Java Topology Suite</a> for reading and writing GIS formats and for processing features. Beta components are also available based on <a href="http://www.sextantegis.com/">Sextante</a> library providing RASTER processing.</p>
+
+<h2>What are the supported formats?</h2>
+
+<p>Main GIS formats including PostGIS, Oracle Spatial, ESRI Shapefile, MIF/MID, GPX, KML, ... and <a href="http://www.gdal.org/ogr/ogr_formats.html">OGR vector formats</a> are available.</p>
+
+<h2>What are the supported transformations?</h2>
+
+<p>Common GIS operations are available like buffer, centroïd, inside point, area, length, distance, intersection, union, envelope, boundary, convex hull, difference, clip, simplify, ...</p>
+
+<h2>What else?</h2>
+
+<p>User benefits from the large panel of components available in Talend Data Integration and can easily interact with all type of data sources (eg. databases, XML or SOAP web services, JSON). It also support GIS data management functionnalities dealing with data publication and metadata crawling and publisher:</p>
+
+<ul>
+<li>OGC standards: CSW for communication with metadata catalog, WFS for accessing feature on the web</li>
+<li>Geographic information metadata standard ISO19139</li>
+<li>
+<a href="http://geoserver.org/">GeoServer</a> REST API</li>
+</ul><h1>News &amp; events</h1>
+
+<ul>
+<li>28 september 2012 : <a href="https://github.com/talend-spatial/talend-spatial/issues">New issue tracker</a> available on github.</li>
+<li>5 september 2012 : <a href="http://sourceforge.net/projects/sdispatialetl/files/sdispatialetl/TOS.spatial.5.1.1/">New Talend Spatial module version 5.1.1</a>
+</li>
+<li>16 august 2012 : Source code move to <a href="http://github.com/talend-spatial/talend-spatial">github</a>
+</li>
+<li>8 july 2011 : <a href="http://sourceforge.net/projects/sdispatialetl/files/sdispatialetl/TOS.spatial.4.2.0/">New Talend Spatial module version 4.2.0</a>
+</li>
+<li>14 april 2011 : <a href="http://sourceforge.net/projects/sdispatialetl/files/sdispatialetl/TOS.spatial.4.1.2/">New Talend Spatial module version 4.1.2</a>
+</li>
+<li>6 december 2010 : Plug the alpha release of Sextante module to TOS 4.1.x / <a href="http://sourceforge.net/projects/sdispatialetl/files/sdispatialetl/TOS.spatial.4.1.1/">Sextante modules</a>
+</li>
+<li>6 december 2010 : Plug the new spatial module to TOS 4.1.1 / <a href="http://sourceforge.net/projects/sdispatialetl/files/sdispatialetl/TOS.spatial.4.1.1/">Spatial modules only</a>
+</li>
+<li>6 october 2010 : Plug the new spatial module to TOS 4.1.0 / <a href="http://sourceforge.net/projects/sdispatialetl/files/sdispatialetl/TOS.spatial.4.1.0/">Spatial modules only</a>
+</li>
+<li>3 june 2010: New release / <a href="http://sourceforge.net/projects/sdispatialetl/files/sdispatialetl/TOS.spatial.4.0.1/">Version 4.0.1 of TOS with Spatial modules</a>
+</li>
+<li>20 january 2010: New release / <a href="http://sourceforge.net/projects/sdispatialetl/files/">Version 3.2.2 of Spatial Data Integrator</a>
+</li>
+<li>22 october 2009: New release / Version 3.2.0 of Spatial Data Integrator</li>
+<li>27 october 2008: New release / Version 1.3.0 of Spatial Data Integrator</li>
+<li>2 october 2008: <a href="http://conference.osgeo.org/index.php/foss4g/2008/paper/view/56">SDI at FOSS4G2008</a>
+</li>
+<li>8,9,10 april 2008: <a href="http://www.ortech.fr/geo-evenement/village_open_source.php">SDI on the OpenSource village of Paris - Géo-événement 2008</a>
+</li>
+<li>7 april 2008: New release / Version 1.2.0 of Spatial Data Integrator</li>
+<li>3 april 2008: <a href="http://camptocamp.com/article224.html">FOSS4G for geodata transformation technical workshop in Lyon / France</a>
+</li>
+<li>29 January 2008: New release / Version 1.1 of Spatial Data Integrator</li>
+<li>November 2007: Spatial Data Integrator at the <a href="http://geonetwork-opensource.org/documentation/workshops/workshop-2007/geonetwork-opensource-workshop-april-2006">GeoNetwork workshop</a>
+</li>
+<li>September 2007: <a href="http://www.foss4g2007.org/presentations/view.php?abstract_id=227">Spatial Data Integrator at FOSS4G2007</a>
+</li>
+</ul><h1>Team</h1>
+
+<h2>Active contributors</h2>
+
+<ul>
+<li>François-Xavier Prunayre (<a href="http://titellus.net">titellus</a>)</li>
+<li>Benjamin Chartier</li>
+<li>Mathieu Coudert (Spot Image)</li>
+<li>Yves Jacolin (<a href="http://www.camptocamp.com">Camptocamp</a>)</li>
+</ul><h2>Previous contributors</h2>
+
+<ul>
+<li>Jesse Eichar (<a href="http://www.camptocamp.com">Camptocamp</a>)</li>
+<li>Eric Lemoine (<a href="http://www.camptocamp.com">Camptocamp</a>)</li>
+</ul><h1>Get the source</h1>
+
+<p><code>git clone git@github.com:talend-spatial/talend-spatial.git</code></p>
       </section>
     </div>
 
